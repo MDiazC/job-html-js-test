@@ -1,0 +1,502 @@
+/**
+ * Created by Moises Diaz (gitHub: MDiazC) on 27/09/15.
+ */
+
+html{
+    height:100%;
+    width:100%;
+}
+
+body{
+    height:100%;
+    width:100%;
+    margin:0
+}
+
+p,span{
+    font-size: 12px;
+    font-family: Raleway;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("../font/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("../font/Raleway-Bold.ttf");
+    font-weight: bold;
+}
+
+.clear{
+    clear: both;
+}
+
+.red_button{
+    background-color: red;
+    padding:10px;
+    color:white;
+}
+
+.header_text{
+    font-size: 30px;
+    font-weight: bold;
+    display:block;
+}
+
+.main_text{
+    font-size: 17px;
+    display:block;
+    color:gray;
+}
+
+.loading{
+    background: rgba(255, 255, 255, 1) url("../img/loading_spinner.gif") no-repeat scroll right center / 40px 40px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.results{
+    background-color: white;
+    cursor:pointer;
+    color:black;
+    margin-left: 75px;
+    width: 150px;
+    border:solid 1px gray;
+    border-radius: 6px;
+    padding-left:4px;
+}
+
+/* div header_fix */
+#header_fix{
+    display: block;
+    top:0;
+    padding-top: 30px;
+    width: 100%;
+    height:40px;
+}
+
+#header_fix .logo{
+    margin-left:30px;
+    margin-right: 30px;
+    float:left;
+}
+
+#header_fix #searcher{
+    float:right;
+    margin-right: 30px;
+}
+
+#header_fix #searcher .search{
+    display:inline-block;
+    margin-left:30px;
+    margin-right: 10px;
+}
+
+ #header_fix #searcher .input_text{
+     margin-left:10px;
+     margin-right: 30px;
+     width:0px;
+     display: none;
+ }
+
+#header_fix .header_option{
+    font-weight: bold;
+    color:white;
+    float:left;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size:17px;
+    padding-right: 10px;
+}
+
+#header_fix .red_bottom{
+    padding-bottom: 4px;
+    border-bottom: 1px solid red;
+}
+
+
+/* div our_story */
+#home{
+    background: url("../img/background_grey.png") no-repeat scroll 0 0 / 100% auto;
+    margin: -1px;
+}
+
+#our_story{
+    box-sizing: border-box;
+    height: 100%;
+    margin: -1px;
+    padding: 100px;
+    width: 100%;
+}
+
+#our_story .story_text{
+    margin-bottom: 11%;
+    margin-top: 11%;
+}
+
+#our_story .story_text .central_text{
+    color:white;
+    font-size: 46px;
+    line-height: 53px;
+    display: block;
+}
+
+#our_story .story_text .central_text .red_text{
+    background-color:red;
+    font-size: 46px;
+}
+
+#our_story  .ideas_divs{
+    width:24%;
+}
+
+#our_story  .ideas_divs .ideas_icon{
+    width:50px;
+    height:50px;
+}
+
+#our_story  .ideas_divs .ideas_text{
+    color:white;
+}
+
+#our_story  #graph_div{
+    display:inline-block;
+}
+
+#our_story  #sun_div{
+    display:inline-block;
+}
+
+#our_story  #star_div{
+    display:inline-block;
+}
+
+#our_story  #envelop_div{
+    display:inline-block;
+}
+
+#our_story #arrow_down{
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* div services */
+#services{
+    box-sizing: border-box;
+    margin: -1px;
+    padding: 100px;
+    width: 100%;
+}
+
+#services #services_text{
+    display:block;
+    padding-bottom: 50px;
+}
+
+#services #services_text #services_left_div{
+    display:inline-block;
+    padding-right: 20px;
+    max-width:30%;
+    vertical-align: middle
+}
+
+
+#services #services_text #services_left_div .left_text{
+    display:block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#services #services_text #services_left_div .left_text .underline_text{
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+#services #services_text #services_center_div{
+    display:inline-block;
+    max-width:55%;
+    padding-right: 20px;
+    vertical-align: middle
+}
+
+#services #services_text #services_right_div{
+    display:inline-block;
+    vertical-align: middle
+}
+
+#services #services_text #services_right_div .right_button {
+    font-size: 30px;
+}
+
+#services #services_images{
+    display:block
+}
+
+#services #services_images .icon{
+    color: rgba(0,0,0,0) !important;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+}
+
+#services #services_images .icon .text{
+    padding-top: 35%;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+}
+
+#services #services_images .icon .text .center{
+    font-size:17px;
+}
+
+#services #services_images .icon .text .header{
+    font-size:19px;
+    font-weight: bold;
+    display: block;
+}
+
+#services #services_images .icon:hover{
+    background-position: 50% 20% !important;
+    background-color: rgba(0,0,0,0.5) !important;
+    color: rgba(255,255,255,1) !important;
+
+}
+
+#services #services_images #left_image{
+    background: rgba(0,0,0,0.5) url("../img/girl.png") no-repeat center center;
+    display:inline-block;
+    width:32%;
+    margin-right: 15px;
+    height: 370px;
+    position: relative;
+}
+
+#services #services_images #left_image #square{
+    background: url("../img/girl_square.png") no-repeat center center;
+}
+
+#services #services_images #center_image{
+    background: url("../img/two_guys.png") no-repeat center center;
+    display:inline-block;
+    width:32%;
+    margin-right: 15px;
+    height: 370px;
+    position: relative;
+}
+
+#services #services_images #center_image #circle{
+    background: url("../img/two_guys_circle.png") no-repeat center center;
+}
+
+#services #services_images #right_image{
+    background: url("../img/laptop.png") no-repeat center center;
+    display:inline-block;
+    width:32%;
+    height: 370px;
+    position: relative;
+}
+
+#services #services_images #right_image #triangle{
+    background: url("../img/laptop_triangle.png") no-repeat center center;
+}
+
+
+/* div work */
+#work{
+    height: 100%;
+}
+
+#work #images_div{
+    height: 100%;
+}
+
+
+#work #images_div #work_left_div{
+    display:inline-block;
+    width:100px;
+    height: 100%;
+    background: url("../img/arrow_left.png") no-repeat center center;
+    vertical-align: middle;
+}
+
+#work #images_div #work_center_div{
+    display:inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width:86%;
+}
+
+#work #images_div #work_center_div .left_column{
+    display: inline-block;
+    max-width: 550px;
+    padding-right: 50px;
+    vertical-align: middle;
+}
+
+#work #images_div #work_center_div  .left_column .projects_text{
+    padding-bottom:40%;
+}
+
+#work #images_div #work_center_div .left_column .projects_image{
+    background: url("../img/inside.png") no-repeat center center;
+    width:550px;
+    height:300px;
+}
+
+#work #images_div #work_center_div .right_column{
+    display: inline-block;
+    background: url("../img/guy_drinking.png") no-repeat center center;
+    width:750px;
+    height: 700px;
+    vertical-align: middle;
+    max-width: 750px;
+}
+
+#work #images_div #work_right_div{
+    display:inline-block;
+    width:100px;
+    height: 100%;
+    background: url("../img/arrow_right.png") no-repeat center center;
+    vertical-align: middle;
+}
+
+#work_texts{
+    box-sizing: border-box;
+    margin: -1px;
+    padding: 50px 150px;
+    width: 100%;
+    display: block;
+}
+
+#work_texts .left_column{
+    display: inline-block;
+    width:49%;
+    vertical-align: top;
+    padding-right: 10px;
+
+}
+
+#work_texts .right_column{
+    display: inline-block;
+    vertical-align: top;
+    width:49%;
+}
+
+#work_texts .right_column .text{
+    padding-bottom: 10px;
+}
+
+#work_texts .right_column .clock_icon{
+    background: url("../img/clock.png")  no-repeat left center;
+    background-size: 16px 16px;
+    padding-left: 20px
+}
+
+#work_texts .lower_div{
+    display: block;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    width: 240px;
+}
+
+#work_texts .lower_div .left_button{
+    font-size:15px;
+    margin-right: 10px;
+}
+
+#work_texts .lower_div .right_button{
+    color:black;
+    border:1px solid black;
+    font-weight: bold;
+    font-size:15px;
+    padding: 10px 30px;
+}
+
+#projects_logos{
+    box-sizing: border-box;
+    margin: -1px;
+    display:block;
+    width:100%;
+    height:120px;
+    background-color: #f6f6f6;
+    padding-top: 40px;
+}
+
+#projects_logos .project_logo{
+    padding-left: 11%;
+}
+
+/* div journal */
+#journal{
+    background: rgba(0, 0, 0, 0) url("../img/background_bottom.png") no-repeat scroll 0 0 / 100% 100%;
+    height: 100%;
+    margin: -3px;
+}
+
+#journal .text {
+    text-align: center;
+    padding-top:18%;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+#journal .text .header_text{
+    color:white;
+    padding-bottom: 10px;
+}
+
+#journal .text .main_text{
+    padding-bottom: 30px;
+}
+
+#journal .text .button{
+    font-size:17px;
+}
+
+/*div contact */
+#contact{
+    background-color: #555555;
+    height: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    margin: -1px;
+    width: 100%;
+    display: block;
+    padding-top: 40px;
+}
+
+#contact .circle{
+    float:left;
+}
+
+#contact .options{
+    float:left;
+    text-align: center;
+    width:95%;
+    color:white;
+}
+
+#contact .options span{
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+#contact .social_network{
+    float:right;
+}
+
+#contact .social_network a{
+    padding-right: 10px;
+}
